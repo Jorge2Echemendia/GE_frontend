@@ -1,0 +1,194 @@
+/* Estilo para los labels */
+label {
+  color: #5b6268; /* Gris con tonalidad 600 */
+  font-weight: bold;
+  margin-left: 10px;
+}
+form{
+    margin-top: -20px;
+    
+}
+input{
+  height: 20px;
+}
+
+/* Estilo para los caja */
+.caja{
+  background-color: #a8bfce;
+  border: 2px solid rgba(255, 255, 255, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 12px;
+}
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem; /* Ajusta el tamaño del texto según prefieras */
+  color: #000; /* Color del icono */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+.btn-close:hover {
+  transform: translateY(-5px); /* Mueve el botón hacia arriba */
+  font-size: 1.7rem; /* Aumenta el tamaño del texto */
+}
+
+
+.thumbnail {
+  background: #2a32cc;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+.parrafo{
+  font-size: 70px;
+  color: fff;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+.parrafo1{
+  font-size: 40px;
+  color: rgb(232, 231, 238);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.linea {
+  position: relative;
+  transition: border-bottom 0.5s ease-in-out;
+ }
+ 
+ .linea:hover {
+  border-bottom: 1px solid black;
+ }
+ 
+.linea:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ .linea:hover::after {
+  transform: scaleX(1);
+ }
+ .invalido{
+  color: red;
+ }
+ .alerta{
+  display: inline;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+  border-radius: 20px;
+ }
+ .mensaje{
+  margin-top: -15px;
+ }
+ .redondo{
+  border-radius: 50%;
+  font-size: 24px;
+ }
+ .redondo:hover{
+  scale: 1.1;
+ }
+ .entrada{
+  font-weight: 700;
+  text-transform: uppercase;
+ }
+ /* Asegúrate de que este selector coincida con el de tu contenedor */
+.container-custom {
+  padding-top: 0; /* Valor por defecto para tamaños de pantalla más pequeños */
+ }
+ 
+ /* Aplica padding-top solo en tamaños de pantalla medianos o grandes */
+ @media (min-width: 768px) { /* Bootstrap md breakpoint */
+  .container-custom {
+     padding-top: 100px; /* Ajusta el valor según sea necesario */
+  }
+ }
+ .het{
+  max-width: auto;
+  min-width: 250px;
+ }
+ .svg-container {
+  position: relative;
+  width: 100%; /* Ajusta según sea necesario */
+  height: 100%; /* Ajusta según sea necesario */
+ }
+ 
+ .svg-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill:none;
+ }
+
+ .solicitudes-container {
+  min-height: 750px;
+  overflow-y: auto;
+  position: sticky;
+  bottom: 0;
+}
+.btn-cancelar, .btn-guardar {
+  color: white; /* Texto blanco para contraste */
+  border: none; /* Elimina el borde por defecto */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Suaviza la transición */
+ }
+ 
+ .btn-cancelar {
+  background-color: #ff6347; /* Tomato para el botón de cancelar */
+ }
+ 
+ .btn-guardar {
+  background-color: #2ecc71; /* Green para el botón de guardar */
+ }
+ 
+ .btn-cancelar:hover, .btn-guardar:hover {
+  background-color: white; /* Cambia el fondo a blanco */
+ border: 1px solid; /* Agrega un borde con el color original del fondo */
+ }
+ 
+ .btn-cancelar:hover {
+  border-color: #ff6347; /* Agrega un borde naranja para .btn-cancelar */
+  color: #ff6347; /* Cambia el color del texto al color original del fondo para .btn-cancelar */
+  
+}
+ 
+ .btn-guardar:hover {
+  border-color: #2ecc71; /* Agrega un borde verde para .btn-guardar */
+  color: #2ecc71; /* Cambia el color del texto al color original del fondo para .btn-guardar */
+  
+}
+ 
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los botones */
+}
+.btn-editar {
+  background-color: orange;
+  color: black; /* Asegúrate de que el texto tenga un color inicial */
+  border: none; /* Elimina el borde por defecto */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Suaviza la transición */
+ }
+ 
+ .btn-editar:hover {
+  background-color: white; /* Cambia el fondo a blanco */
+  color: orange; /* Cambia el color del texto al color original del fondo */
+  border: 1px solid orange; /* Agrega un borde con el color original del fondo */
+ }
